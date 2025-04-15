@@ -2,5 +2,12 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
+        <content>
+            <Panel headerText="{i18n>selectionScreen}" id="firstPanle">
+                <Label id="labelShipName" labelFor="shipName"  text="Ship Name" class="sapUiSmallMargin" />
+                <Input id="shipName" width="200px"  class="sapUiSmallMargin" ></Input>
+                <Label id="labelCountry" text="Country" class="sapUiSmallMargin" ></Label>
+            </Panel>
+        </content>
     </Page>
 </mvc:View>
