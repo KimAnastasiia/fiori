@@ -6,7 +6,7 @@
         <content>
             <Panel headerText="{i18n>SelectionScreen}" id="firstPanel">
                 <Label id="labelShipName" labelFor="shipName"  text="Ship Name" class="sapUiSmallMargin" />
-                <Input id="shipName" width="200px"  class="sapUiSmallMargin" ></Input>
+                <Input id="shipName" width="200px"  class="sapUiSmallMargin" value="{SelectionScreen>/ShipName}"></Input>
                 <Label id="labelCountry" text="Country" class="sapUiSmallMargin" ></Label>
                 <Select  id="slCountry" selectedKey="{SelectionScreen>/CountryKey}" forceSelection="false" 
                                         items="{SelectionScreen>/Countries}" >
