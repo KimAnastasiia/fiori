@@ -4,7 +4,7 @@
     xmlns:core="sap.ui.core">
     <Page id="page" title="{i18n>title}">
         <content>
-            <Panel headerText="{i18n>SelectionScreen}" id="firstPanel">
+            <Panel headerText="{i18n>selectionScreen}" id="firstPanel">
                 <Label id="labelShipName" labelFor="shipName"  text="Ship Name" class="sapUiSmallMargin" />
                 <Input id="shipName" width="200px"  class="sapUiSmallMargin" value="{SelectionScreen>/ShipName}"></Input>
                 <Label id="labelCountry" text="Country" class="sapUiSmallMargin" ></Label>
