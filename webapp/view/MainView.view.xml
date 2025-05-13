@@ -28,7 +28,60 @@
                 press="onClearFilter"
                 class="sapUiSmallMarginEnd"/>
 
+            <Button 
+                id="btnClickAqui"
+                text="clickAqui"
+                press="clickAqui"
+                class="sapUiSmallMarginEnd"/>
+                
+                
             </Panel>
+            <Panel id="myPanel">
+                <List 
+                    id="personasList"
+                    headerText="Lista de Personas"
+                    items="{Personas>/}">
+                    <items>
+                        <CustomListItem id="cliPersona">
+                            <HBox id="hboxPersona">
+                                <Text id="textNombre" text="{Personas>nombre}" class="sapUiSmallMarginEnd"/>
+                                <Text id="textApellido" text="{Personas>apellido}"/>
+                                <!-- Botón Borrar -->
+                                <Button 
+                                    text="Borrar"
+                                    type="Reject"
+                                    press="metodoBorrarPersona" 
+                                    class="sapUiSmallMarginStart"/>
+                            </HBox>
+                        </CustomListItem>
+                    </items>
+                </List>
+            </Panel>
+          
+        <Panel
+            id="panelFormularioPersona"
+            headerText="Agregar Persona"
+            class="sapUiResponsiveMargin sapUiSmallMarginTop">
+
+            <VBox id="vboxFormularioPersona" class="sapUiSmallMargin">
+
+                <Label id="labelNombre" text="Nombre" labelFor="inputNombre"/>
+                <Input id="inputNombre" placeholder="Ingrese nombre" />
+
+                <Label id="labelApellido" text="Apellido" labelFor="inputApellido"/>
+                <Input id="inputApellido" placeholder="Ingrese apellido" />
+
+                <Button 
+                    id="btnAgregarPersona"
+                    text="Agregar"
+                    type="Emphasized"
+                    press="metodoAgregarPersona"
+                    class="sapUiSmallMarginTop"/>
+                    
+            </VBox>
+        </Panel>
+
+
           <Panel id="secondPanel" >
 
                 <List 
